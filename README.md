@@ -71,5 +71,6 @@ Thoughts for future development:
 - inline html
 - possible conversion with `.msg` and `.oft` (oft, less likely) formats
 - work to support other clients (so far, I've only tested Outlook because that is what I needed and the reason I created this package)
+
 Long-term:
 - Support sending mail directly (e.g. through SMTP)
