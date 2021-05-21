@@ -6,7 +6,7 @@ HIGHLIGHT: Create EML or EMLTPL files in an unsent, aka draft, state. Open it up
 And hey! This is the first package I have created; any advice would be appreciated. Contact me if you have any tips, advice, or want to contribute!
 
 ## Usage
-The primary use case for this package will likely be the creation of `eml` and `emtpl` documents with text and attachments that open as a draft, ready to send, in an email client. Actual behavior is platform and email client-dependent based on their implementation of the MIME standard.
+The primary use case for this package will likely be the creation of `eml` and `emltpl` documents with text and attachments that open as a draft, ready to send, in an email client. Actual behavior is platform and email client-dependent based on their implementation of the MIME standard.
 
 ### Example
 The following example does the following:
