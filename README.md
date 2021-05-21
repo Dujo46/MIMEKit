@@ -29,7 +29,7 @@ let body = MIMEText(using: "Team,\n\nPlease review the attached document.\n\nVer
 email.attach(body)
 
 do {
-  let pdfUrl = URL(fileURLWithPath: "/Users/dujo/Desktop/Swift.pdf")
+  let pdfUrl = URL(fileURLWithPath: "/Path/To/The/File/Swift.pdf")
   let filename = pdfUrl.lastPathComponent
    
   guard FileManager.default.fileExists(atPath: pdfUrl.path) else {
@@ -59,5 +59,5 @@ do {
 
 // Write the document
 // Use `emltpl` if you want to open the document as a draft
-try email.write(to: "/Users/dujo/Desktop/testPackage.emltpl")
+try email.write(to: "/Path/To/Your/Destination/testPackage.emltpl")
 ```
