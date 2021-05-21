@@ -10,10 +10,8 @@ The primary use case for this package will likely be the creation of `eml` and `
 
 ### Example
 The following example does the following:
-Creates a MIMEMultiPart message
-Modifies the recipient, subject, and sent status (mark as unsent aka draft)
-Creates the body text using MIMEText
-Attaches a PDF document using MIMEApplication
+Creates a MIMEMultiPart message. Modifies the recipient, subject, and sent status (mark as unsent aka draft). Creates the body text using MIMEText. Attaches a PDF document using MIMEApplication.
+
 ```swift
 import MIMEKit
 import Foundation
