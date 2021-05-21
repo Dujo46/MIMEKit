@@ -67,6 +67,7 @@ try email.write(to: "/Path/To/Your/Destination/testPackage.emltpl")
 MIMEKit is a work in progress, and I will continue to research the standard and plan include features like inline HTML/images. So far, the structure of objects within the MIME standard are interchangeable and heavily dependent on their headers - a little creative thinking can use the included MIMEObject protocol to create other classes ("parts") to use in the MIMEMultiPart.
 
 Thoughts for future development:
+- read multi-part  `eml` and `emltpl` files
 - inline images
 - inline html
 - possible conversion with `.msg` and `.oft` (oft, less likely) formats
