@@ -36,7 +36,7 @@ do {
    
   guard FileManager.default.fileExists(atPath: pdfUrl.path) else {
     // Code here to handle when !.fileExists(atpath:)
-    throw MIMEError.writeError("File does not exist.")
+    throw MIMEError.readError("File does not exist.")
   }
    
   // Read your attachment as Data
