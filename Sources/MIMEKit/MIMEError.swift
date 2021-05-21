@@ -3,6 +3,6 @@
 //  MIME
 //
 
-open enum MIMEError: Error {
+public enum MIMEError: Error {
     case writeError(String)
 }
