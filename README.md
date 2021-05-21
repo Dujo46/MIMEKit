@@ -1,6 +1,10 @@
 # MIMEKit
 MIMEKit is a minimal package written in 100% Swift that creates `eml` and `emltpl` documents using the Multipurpose Internet Mail Extensions standard - development focused on conformance with RFC 2045 - RFC 2049.
 
+HIGHLIGHT: Create EML or EMLTPL files in an unsent, aka draft, state. Open it up, and its ready to send!
+
+And hey! This is the first package I have created; any advice would be appreciated. Contact me if you have any tips, advice, or want to contribute!
+
 ## Usage
 The primary use case for this package will likely be the creation of `eml` and `emtpl` documents with text and attachments that open as a draft, ready to send, in an email client. Actual behavior is platform and email client-dependent based on their implementation of the MIME standard.
 
@@ -61,3 +65,13 @@ do {
 // Use `emltpl` if you want to open the document as a draft
 try email.write(to: "/Path/To/Your/Destination/testPackage.emltpl")
 ```
+## The Future
+MIMEKit is a work in progress, and I will continue to research the standard and plan include features like inline HTML/images. So far, the structure of objects within the MIME standard are interchangeable and heavily dependent on their headers - a little creative thinking can use the included MIMEObject protocol to create other classes ("parts") to use in the MIMEMultiPart.
+
+Thoughts for future development:
+    - inline images
+    - inline html
+    - possible conversion with `.msg` and `.oft` (oft, less likely) formats
+    - work to support other clients (so far, I've only tested Outlook because that is what I needed and the reason I created this package)
+Long-term:
+    - Support sending mail directly (e.g. through SMTP)
