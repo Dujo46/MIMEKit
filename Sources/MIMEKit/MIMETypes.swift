@@ -3,7 +3,7 @@
 //  MIME
 //
 
-open enum MIMEType: String, CaseIterable {
+public enum MIMEType: String, CaseIterable {
     case aac = "audio/aac"
     case abw = "application/x-abiword"
     case arc = "application/x-freearc"
